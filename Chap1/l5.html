@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script type="text/javascript">
+			function showInformation(){
+				var spObj = window.document.getElementById("spInfo");
+				spInfo.innerHTML =
+					"Available Height:"+screen.availHeight+"<br>"+
+					"Available Width:"+screen.availWidth+"<br>"+
+					"Height:"+screen.height+"<br>"+
+					"Width:"+screen.width+"<br>"	
+			}
+		</script>
+	</head>
+	<body onload="showInformation();">
+		<span id="spInfo"></span>
+	</body>
+</html>
+<!--
+The	properties	are	described	as	follows: 
+availHeight	:	This	returns	the	height	of	the	screen 
+availWidth:	This	returns	the	width	of	the	screen 
+colorDepth:	This	returns	the	bit	depth	of	the	color	palette	for	displaying	images 
+height:	This	returns	the	total	height	of	the	screen 
+pixelDepth:	This	returns	the	color	resolution	(in	bits	per	pixel)	of	the	screen 
+width:	This	returns	the	total	width	of	the	screen
+--!>

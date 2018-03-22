@@ -1,0 +1,41 @@
+<!DOCTYPE	html>
+<html>
+	<head>
+		<script	type="text/javascript">
+			function	showInformation()	{
+			var	spObj	=	window.document.getElementById("spInfo");
+			spObj.innerHTML	=
+			"Browser	Code	Name:	"	+	navigator.appCodeName	+	"<br>"	+
+			"Application	Name:	"	+	navigator.appName	+	"<br>"	+
+			"Application	Version:	"	+	navigator.appVersion	+	"<br>"	+
+			"Cookie	Enabled?	"	+	navigator.cookieEnabled	+	"<br>"	+
+			"Language:	"	+	navigator.language	+	"<br>"	+
+			"Online:	"	+	navigator.onLine	+	"<br>"	+
+			"Platform:	"	+	navigator.platform	+	"<br>"	+
+			"Product:	"	+	navigator.product	+	"<br>"	+
+			"User	Agent:	"	+	navigator.userAgent;
+			navigator.geolocation.getCurrentPosition(showPosition);
+			}	
+					function	showPosition(position)	{
+						var	spObj	=	window.document.getElementById("spInfo");
+						spObj.innerHTML	=
+						spObj.innerHTML	+	"<br>	Latitude:	"	+	position.coords.latitude	+
+						"<br>Longitude:	"	+	position.coords.longitude;
+			}		
+	</script> </head> <body	onload="showInformation();">		
+	<span	id="spInfo"></span> 
+	</body> 
+	</html>
+<!--
+The	properties	are	described	as	follows:
+ appCodeName:	This	returns	the	code	name	of	the	browser 
+ appName:	This	returns	the	name	of	the	browser 
+ appVersion:	This	returns	the	version	of	the	browser 
+ cookieEnabled:	This	determines	whether	cookies	are	enabled	in	the	browser 
+ geoLocation:	This	gets	the	location	of	the	user	accessing	the	page 
+ language:	This	returns	the	language	of	the	browser 
+ online:	This	determines	whether	the	browser	is	online 
+ platform:	This	returns	the	platform	that	the	browser	has	compiled 
+ product:	This	returns	the	engine	name	of	the	browser 
+ userAgent:	This	returns	the	user	agent	header	sent	by	the	browser	to	the	server 
+ --!>
