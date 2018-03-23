@@ -1,0 +1,16 @@
+<!--event in javaScript-->
+<html>
+	<body>
+		<div id="contentPane" style="width:200px; height:200px;">
+		</div>
+		<script>
+			var divPane = document.getElementById("contentPane");
+			divPane.onmouseenter = function(){
+				divPane.innerHTML = "You are inside the div";
+			};
+			divPane.onmouseleave = function(){
+				divPane.innerHTML = "You are outside the div";
+			};
+		</script>
+	</body>
+</html>
