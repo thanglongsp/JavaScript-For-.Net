@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.12.0.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('div,h1,p,footer').each(function(){
+					console.log($(this).html());
+				)};
+			});
+		</script>
+	</head>
+	<body>
+		<div id="headerDiv">
+			<h1>Demo</h1>
+		</div>
+		<div id="mainDiv">
+			<p>This is a demo of using jQuery for selecting elements</p>
+		</div>
+		<div id="footerDiv">
+			<footer>Copyright - JavaScript for .Net Developers</footer>
+		</div>
+	</body>
+</html>
